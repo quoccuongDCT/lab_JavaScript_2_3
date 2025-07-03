@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JS – Buổi 2 & 3</title>
+    <script src="./main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 p-6">
+    <div class="max-w-3xl mx-auto space-y-10">
+        <h1 class="text-3xl font-bold text-center text-blue-600">Bài tập JavaScript – Buổi 2 & 3</h1>
+
+        <!-- BÀI 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-blue-500">Bài 1 – Tính tiền lương nhân viên</h2>
+            <div class="space-y-3">
+                <input type="number" id="salaryPerDay" placeholder="Lương 1 ngày (VND)"
+                    class="w-full p-2 border rounded" />
+                <input type="number" id="workingDays" placeholder="Số ngày làm" class="w-full p-2 border rounded" />
+                <button id="btnSalary" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Tính
+                    lương</button>
+                <p id="salaryResult" class="text-green-600 font-medium"></p>
+            </div>
+        </div>
+
+        <!-- BÀI 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-purple-500">Bài 2 – Giá trị trung bình 5 số</h2>
+            <div class="space-y-3">
+                <input type="number" id="so1" placeholder="Số 1" class="w-full p-2 border rounded" />
+                <input type="number" id="so2" placeholder="Số 2" class="w-full p-2 border rounded" />
+                <input type="number" id="so3" placeholder="Số 3" class="w-full p-2 border rounded" />
+                <input type="number" id="so4" placeholder="Số 4" class="w-full p-2 border rounded" />
+                <input type="number" id="so5" placeholder="Số 5" class="w-full p-2 border rounded" />
+                <button id="btnAverage" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">Tính
+                    trung bình</button>
+                <p id="avgResult" class="text-green-600 font-medium"></p>
+            </div>
+        </div>
+
+        <!-- BÀI 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-green-500">Bài 3 – Quy đổi tiền (USD ➜ VND)</h2>
+            <div class="space-y-3">
+                <input type="number" id="usdAmount" placeholder="Số tiền USD" class="w-full p-2 border rounded" />
+                <input type="number" id="rate" value="24000" class="w-full p-2 border rounded" />
+                <button id="btnExchange" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Quy
+                    đổi</button>
+                <p id="exchangeResult" class="text-green-600 font-medium"></p>
+            </div>
+        </div>
+
+        <!-- BÀI 4 -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-pink-500">Bài 4 – Diện tích & Chu vi hình chữ nhật</h2>
+            <div class="space-y-3">
+                <input type="number" id="rectLength" placeholder="Chiều dài" class="w-full p-2 border rounded" />
+                <input type="number" id="rectWidth" placeholder="Chiều rộng" class="w-full p-2 border rounded" />
+                <button id="btnRectangle"
+                    class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">Tính</button>
+                <p id="rectResult" class="text-green-600 font-medium"></p>
+            </div>
+        </div>
+
+        <!-- BÀI 5 -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-yellow-500">Bài 5 – Tính tổng 2 ký số</h2>
+            <div class="space-y-3">
+                <input type="number" id="twoDigit" placeholder="Số có 2 chữ số (10–99)"
+                    class="w-full p-2 border rounded" />
+                <button id="btnDigits" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Tính
+                    tổng</button>
+                <p id="digitsResult" class="text-green-600 font-medium"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
