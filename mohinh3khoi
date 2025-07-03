@@ -1,0 +1,92 @@
+/** 
+ * Bài 1 – Tính tiền lương nhân viên
+ * 
+ ** Đầu vào:
+ *   - Tạo biến `salary` để nhập lương mỗi ngày, mặc định là 100.000 VND (có thể thay đổi).
+ *   - Tạo biến `days` để nhập số ngày làm việc.
+ *   - Tạo biến `total` để lưu tổng tiền lương.
+ *   - Lấy dữ liệu từ 2 ô input có ID: `#salaryPerDay` và `#workingDays`.
+ * 
+ ** Xử lý:
+ *   - Sử dụng hàm `Number()` để chuyển giá trị nhập vào từ chuỗi sang số.
+ *   - Kiểm tra hợp lệ bằng `if (!isNaN(salary) && !isNaN(days))`.
+ *   - Tính tổng tiền lương: `total = salary * days`.
+ *   - Định dạng kết quả về tiền tệ Việt Nam bằng `toLocaleString("vi-VN")`.
+ * 
+ ** Đầu ra:
+ *   - Hiển thị tổng tiền lương (`total`) ra thẻ có ID `#salaryResult`.
+ *   - Nếu nhập sai, hiển thị dòng: "Vui lòng nhập đúng!"
+ */
+
+/**
+* Bài 2 – Tính giá trị trung bình của 5 số
+* 
+** Đầu vào:
+*   - Tạo 5 biến: `so1`, `so2`, `so3`, `so4`, `so5` để nhận 5 giá trị từ người dùng.
+*   - Lấy dữ liệu từ các input có ID: `#so1`, `#so2`, `#so3`, `#so4`, `#so5`.
+* 
+** Xử lý:
+*   - Dùng `Number()` để chuyển dữ liệu từ input thành số.
+*   - Kiểm tra tất cả đều là số hợp lệ bằng `!isNaN(...)`.
+*   - Tính trung bình: `(so1 + so2 + so3 + so4 + so5) / 5`.
+* 
+** Đầu ra:
+*   - Hiển thị kết quả ra thẻ có ID `#avgResult`.
+*   - Nếu có số không hợp lệ, hiển thị: "Vui lòng nhập đúng đủ 5 số!"
+*/
+
+/**
+* Bài 3 – Quy đổi tiền USD sang VND
+* 
+** Đầu vào:
+*   - Biến `usd` chứa số tiền USD cần quy đổi.
+*   - Biến `rate` chứa tỷ giá VND/USD (mặc định là 24000).
+*   - Lấy dữ liệu từ input: `#usdAmount` và `#rate`.
+* 
+** Xử lý:
+*   - Dùng `Number()` chuyển dữ liệu thành số.
+*   - Kiểm tra hợp lệ bằng `if (!isNaN(...))`.
+*   - Tính kết quả: `vnd = usd * rate`.
+*   - Định dạng kết quả bằng `toLocaleString("vi-VN")`.
+* 
+** Đầu ra:
+*   - Hiển thị ra thẻ `#exchangeResult`.
+*   - Nếu sai, hiển thị: "Vui lòng nhập đúng!"
+*/
+
+/** 
+ * Bài 4 – Tính diện tích và chu vi hình chữ nhật
+ * 
+ ** Đầu vào:
+ *   - Biến `length` và `width` để nhập chiều dài và chiều rộng.
+ *   - Lấy từ input có ID `#rectLength` và `#rectWidth`.
+ * 
+ ** Xử lý:
+ *   - Dùng `Number()` để ép kiểu.
+ *   - Kiểm tra hợp lệ: `!isNaN(length) && !isNaN(width)`.
+ *   - Tính diện tích: `area = length * width`.
+ *   - Tính chu vi: `perimeter = 2 * (length + width)`.
+ * 
+ ** Đầu ra:
+ *   - Hiển thị kết quả ra `#rectResult`.
+ *   - Nếu sai, hiện: "Vui lòng nhập đúng!"
+ */
+
+/**
+* Bài 5 – Tính tổng 2 ký số
+* 
+** Đầu vào:
+*   - Biến `num` là số nguyên từ 10 đến 99.
+*   - Lấy dữ liệu từ input có ID `#twoDigit`.
+* 
+** Xử lý:
+*   - Dùng `Number()` để ép kiểu.
+*   - Kiểm tra: `num >= 10 && num <= 99`.
+*   - Lấy hàng chục: `Math.floor(num / 10)`.
+*   - Lấy hàng đơn vị: `num % 10`.
+*   - Tính tổng: `sum = chuc + donVi`.
+* 
+** Đầu ra:
+*   - Hiển thị kết quả ra `#digitsResult`.
+*   - Nếu sai: hiện "Hãy nhập số có 2 chữ số!"
+*/
